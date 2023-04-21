@@ -4,7 +4,7 @@
  * isso garante que a aplicação será atualizada nos clientes onde já exista
  * um cache salvo
  */
- const version = 2
+ const version = 4
  const cachename = 'app-cache-v'+version
  
  /**
@@ -22,8 +22,6 @@
      "./",
      "./index.html",
      "./main.js",
-     "./service-worker.js",
-     "./manifest.json",
      "./main.css",
      "./dados.json",
      "./icone192.png",
@@ -33,6 +31,7 @@
    /**
     * Cria o cache dos arquivos
     */
+   /*
    self.addEventListener('install', function(event) {
      event.waitUntil(
        caches.open(cachename).then(function(cache) {
@@ -40,12 +39,13 @@
        })
      );
    });
-   
+   */
    /**
     * Verifica se existe uma versão em cache das páginas
     * Caso não seja possivel retorna o match(index) da catch
     * Está página pode ser tratada e retornar uma mensagem de erro/offline
     */
+   /**
    self.addEventListener('fetch', function(event) {
      event.respondWith(caches.match(event.request).then(function(response) {
        if (response !== undefined) {
@@ -64,3 +64,5 @@
        }
      }));
    });
+   */
+  
