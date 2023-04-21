@@ -1,0 +1,21 @@
+.accordion-button img{
+    height: 50px;
+    position: absolute;
+    margin-right: 10px;
+}
+
+.accordion-button p{
+    padding-left: 45px;
+}
+
+.accordion {
+    padding: 0px;
+}
+
+.card {
+    padding: 7px;
+}
+
+.card-body a{
+    padding: 15px;
+}
