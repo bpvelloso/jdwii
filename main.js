@@ -22,7 +22,9 @@ function loadData() {
                     $.each(item['musicas'], function(i, musica) {
                         html += '<div class="card"><h6 class="card-title">'+
                                            musica['autor']+' </h6><div class="card-body"> '+musica['titulo']+
-                                '<a target="_blank" href="https://www.youtube.com/results?search_query=\''+musica['titulo']+' '+musica['autor']+'\'">Play</a></div></div>';
+                                '<a target="_blank" href="https://www.youtube.com/results?search_query=\''+musica['titulo']+' '+musica['autor']+'\'">Play</a>'+
+                                '<a target="_blank" href="https://www.google.com/search?q=\''+musica['titulo']+' '+musica['autor']+'\'">Letra</a>'+
+                                '</div></div>';
                     });
                 
             html +=  '</div>'+
